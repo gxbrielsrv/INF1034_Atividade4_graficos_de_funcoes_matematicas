@@ -13,6 +13,8 @@ def sobre_x(x):
 def elevado_x(x):
     return 2**x
 
+def menos_x(x):
+    return 5-(x**2)
 
 
 
@@ -65,14 +67,26 @@ def plano():
 
 #funçao 3
 
+# plano()
+# t.pu()
+# t.goto(-300, 0)
+# t.pd()
+
+# t.color('red')
+# for x in range(-300, 100):
+#     t.goto(x, elevado_x(x))
+# t.clear()
+
+#funçao 4
+
 plano()
 t.pu()
-t.goto(-300, 0)
+t.goto(-300, -300)
 t.pd()
 
 t.color('red')
-for x in range(-300, 100):
-    t.goto(x, elevado_x(x))
+for x in range(-300, 300):
+    t.goto(x, menos_x(x/50)*10)
 
 
 
